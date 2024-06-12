@@ -11,17 +11,18 @@
 
 <!-- Hero Section -->
   <div class="d-flex" id="banner-bg">
-    <div class="cover-container col-xxl-8 m-auto px-4 py-5">
+    <div class="cover-container col-xxl-8 m-auto px-4 py-5 col-sm-12">
       <div class="row flex-lg-row-reverse g-5 py-5">
+        <!-- <video class="back-video" autoplay muted plays-inline src="/Images/Hero Background Image.mp4"></video>-->
         <div class="col-10 col-sm-8 col-lg-6 m-auto">
-          <img src="website-construction-graphic-4.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          <img src="/Images/Designer.jpeg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
-        <div class="col-lg-6 m-auto text-light">
-          <h1 class="display-5 fw-bold lh-1 mb-3">Thomas Schuler</h1>
+        <div class="col-lg-6 col-sm-12 m-auto text-light" id="title-text">
+          <h1 class="display-4 fw-bold lh-1 mb-3">Thomas Schuler</h1>
           <h2 class="pb-3">Web Developer</h2>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="button" class="btn btn-light btn-lg px-4 me-md-2">Projects</button>
-            <button type="button" class="btn btn-outline-light btn-lg px-4">Contact Me</button>
+            <button type="button" class="btn btn-light btn-lg px-4 me-md-2" onclick="window.location.href='#projects'">Projects</button>
+            <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="window.location.href='#contact'">Contact Me</button>
           </div>
         </div>
       </div>
@@ -43,45 +44,45 @@
 <!-- Tech Section -->
   <div class="d-flex justify-content-center align-items-center min-vh-100" id="icon-grid">
     <div class="container px-4 py-5">
-      <h2 class="pb-3 border-bottom text-light">Languages and Technologies</h2>
+      <h2 id="title-lang" class="pb-3 border-bottom text-light">Languages and Technologies</h2>
   
       <div class="row text-light">
         <div class="card text-center col-sm-12 col-md-4 col-lg-3 py-3" id="icon-grid">
-          <img class="card-img-top mx-auto my-auto w-50 py-2" src="Images/HTML.png" alt="">
+          <img id="icon-img" class="card-img-top mx-auto my-auto w-50 py-2" src="Images/HTML.png" alt="">
           <h5 class="card-title">HTML</h5>
         </div>
         <div class="card text-center col-sm-12 col-md-4 col-lg-3 py-3" id="icon-grid">
-          <img class="card-img-top mx-auto my-auto w-50 py-2" src="Images/CSS.png" alt="">
+          <img id="icon-img" class="card-img-top mx-auto my-auto w-50 py-2" src="Images/CSS.png" alt="">
           <h5 class="card-title">CSS</h5>
         </div>
         <div class="card text-center col-sm-12 col-md-4 col-lg-3 py-3" id="icon-grid">
-          <img class="card-img-top mx-auto my-auto w-50 py-2" src="Images/Javascript.png" alt="">
+          <img id="icon-img" class="card-img-top mx-auto my-auto w-50 py-2" src="Images/Javascript.png" alt="">
           <h5 class="card-title">Javascript</h5>
         </div>
         <div class="card text-center col-sm-12 col-md-4 col-lg-3 py-3" id="icon-grid">
-          <img class="card-img-top mx-auto my-auto w-50 py-2" src="Images/Bootstrap.png" alt="">
+          <img id="icon-img" class="card-img-top mx-auto my-auto w-50 py-2" src="Images/Bootstrap.png" alt="">
           <h5 class="card-title">Bootstrap</h5>
         </div>
         <div class="card text-center col-sm-12 col-md-4 col-lg-3 py-3" id="icon-grid">
-          <img class="card-img-top mx-auto my-auto w-50 py-2" src="Images/REACT.png" alt="">
+          <img id="icon-img" class="card-img-top mx-auto my-auto w-50 py-2" src="Images/REACT.png" alt="">
           <h5 class="card-title">REACT JS</h5>
         </div>
         <div class="card text-center col-sm-12 col-md-4 col-lg-3 py-3" id="icon-grid">
-          <img class="card-img-top mx-auto my-auto w-50 py-2" src="Images/NODE.png" alt="">
+          <img id="icon-img" class="card-img-top mx-auto my-auto w-50 py-2" src="Images/NODE.png" alt="">
           <h5 class="card-title">NODE JS</h5>
         </div>
         <div class="card text-center col-sm-12 col-md-4 col-lg-3 py-3" id="icon-grid">
-          <img class="card-img-top mx-auto my-auto w-50 py-2" src="Images/Github.png" alt="">
+          <img id="icon-img" class="card-img-top mx-auto my-auto w-50 py-2" src="Images/Github.png" alt="">
           <h5 class="card-title">Github</h5>
         </div>
         <div class="card text-center col-sm-12 col-md-4 col-lg-3 py-3" id="icon-grid">
-          <img class="card-img-top mx-auto my-auto w-50 py-2" src="Images/Linux.png" alt="">
+          <img id="icon-img" class="card-img-top mx-auto my-auto w-50 py-2" src="Images/Linux.png" alt="">
           <h5 class="card-title">Linux</h5>
         </div>
       </div>
     </div>
   </div>
-  <div>
+  <div id="projects">
     <section class="py-5 text-center container">
       <div class="row py-lg-5">
         <div class="col-lg-6 col-md-8 mx-auto">
@@ -131,176 +132,80 @@
           </div>
           <div class="col">
             <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="Images/Screenshot 2024-05-17 155411.png" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"></img>
   
               <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text">This is a project build to practice and learn React. This was built using React, Bootstrap, and Node.JS.</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    <a href="https://age-clcltr.netlify.app/">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" >View</button>
+                    </a>
                   </div>
-                  <small class="text-muted">9 mins</small>
+                  
                 </div>
               </div>
             </div>
           </div>
   
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-  
-              <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                  </div>
-                  <small class="text-muted">9 mins</small>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
 
     <!-- Contact Us Section -->
-    <section class="Material-contact-section section-padding section-dark">
-      <div class="container">
+    <section id="cont-form" class="Material-contact-section section-padding section-dark">
+      <div id="contact" class="container">
           <div class="row">
               <!-- Section Titile -->
               <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
-                  <h1 class="section-title">Want to Talk?</h1>
+                  <h1 class="section-title text-light">Want to Talk?</h1>
               </div>
           </div>
           <div class="row">
               <!-- Section Titile -->
-              <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+              <div class="text-light col-md-6 mb-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
                 <p>Thank you for taking the time to look at my portfolio! Are you interested in talking or learning more? Send me a message! Also feel free to check out my business website for my freelance web design business.</p>
 
-                <div class="find-widget">
+                <div class="find-widget text-light">
                 Freelance Company:  <a href="https://hostriver.ro">Trinity Web Design</a>
                 </div>
         
                
-                <div class="find-widget">
-                  Website:  <a href="https://uny.ro">www.uny.ro</a>
+                <div class="find-widget text-light mb-3">
+                  Github:  <a href="https://github.com/CodeCruze">https://github.com/CodeCruze</a>
                 </div>
                 
               </div>
               <!-- contact form -->
-              <div class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+              <div  class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
                   <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator" action="https://formsubmit.co/tschuler@ymail.com"> 
                       <!-- Name -->
                       <div class="form-group label-floating">
-                        <label class="control-label" for="name">Name</label>
+                        <label class="control-label text-light m-3" for="name">Name</label>
                         <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
                         <div class="help-block with-errors"></div>
                       </div>
                       <!-- email -->
                       <div class="form-group label-floating">
-                        <label class="control-label" for="email">Email</label>
+                        <label class="control-label text-light m-3" for="email">Email</label>
                         <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
                         <div class="help-block with-errors"></div>
                       </div>
                       <!-- Subject -->
                       <div class="form-group label-floating">
-                        <label class="control-label">Subject</label>
+                        <label class="control-label text-light m-3">Subject</label>
                         <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
                         <div class="help-block with-errors"></div>
                       </div>
                       <!-- Message -->
                       <div class="form-group label-floating">
-                          <label for="message" class="control-label">Message</label>
+                          <label for="message" class="control-label text-light m-3">Message</label>
                           <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
                           <div class="help-block with-errors"></div>
                       </div>
                       <!-- Form Submit -->
                       <div class="form-submit mt-5">
-                          <button class="btn btn-common" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
+                          <button class="btn btn-common text-light" type="submit" id="form-submit"><i class="material-icons mdi mdi-message-outline"></i> Send Message</button>
                           <div id="msgSubmit" class="h3 text-center hidden"></div>
                           <div class="clearfix"></div>
                       <div>
